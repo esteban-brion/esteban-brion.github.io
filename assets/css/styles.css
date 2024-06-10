@@ -1,14 +1,17 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background-color: #f8f9fa;
 }
 
 header {
     margin-bottom: 2rem;
+    background-color: #007bff; /* Couleur principale */
 }
 
 h1, h2 {
     margin-bottom: 1rem;
+    color: #007bff; /* Couleur principale */
 }
 
 .navbar-brand {
@@ -16,16 +19,10 @@ h1, h2 {
     font-weight: bold;
 }
 
-#intro {
-    color: white;
-    padding: 4rem 0;
-    text-align: center;
-}
-
-.profile-img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
+.navbar-brand .profile-img-navbar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 .card {
@@ -37,22 +34,23 @@ h1, h2 {
     font-weight: bold;
 }
 
-#skills {
+#skills, #projects {
     margin-bottom: 2rem;
 }
 
 footer {
     margin-top: 2rem;
+    background-color: #007bff; /* Couleur principale */
 }
 
-button {
-    background: #333;
+button, .btn {
+    background: #007bff;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
 
-button:hover {
-    background: #555;
+button:hover, .btn:hover {
+    background: #0056b3;
 }
