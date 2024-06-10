@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esteban Brion - Développeur Web & Marketing Digital</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="projects.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <header class="bg-dark text-white text-center py-3">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark container">
+            <a class="navbar-brand" href="index.html">Esteban Brion</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <section id="intro">
+    <main class="container mt-5">
+        <section id="intro" class="text-center">
             <h1>Esteban Brion</h1>
-            <p>Développeur Web & Marketing Digital</p>
+            <p class="lead">Développeur Web & Marketing Digital</p>
         </section>
-        <section id="skills">
+        <section id="skills" class="mt-5">
             <h2>Compétences</h2>
-            <ul>
+            <ul class="list-unstyled">
                 <li>HTML, CSS, JavaScript</li>
                 <li>React, Angular, Vue.js</li>
                 <li>Node.js, PHP, Django</li>
@@ -33,14 +40,17 @@
                 <li>WordPress, Joomla, Drupal</li>
             </ul>
         </section>
-        <section id="projects">
+        <section id="projects" class="mt-5">
             <h2>Projets</h2>
             <p>Découvrez quelques-uns de mes projets récents :</p>
             <!-- Ajoutez des cartes de projet ou des liens vers vos projets ici -->
         </section>
     </main>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>© 2024 Esteban Brion - Tous droits réservés</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
