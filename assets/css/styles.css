@@ -20,7 +20,16 @@ h1, h2 {
     background: url('assets/images/profile.jpg') no-repeat center center/cover;
     color: white;
     padding: 4rem 0;
+    text-align: center;
 }
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
 
 #skills ul {
     column-count: 2;
