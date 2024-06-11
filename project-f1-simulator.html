@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Strategy Simulator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="text-white text-center py-3">
+        <nav class="navbar navbar-expand-md navbar-dark container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/profile.jpg" alt="Esteban Brion" class="profile-img-navbar">
+                <span class="ml-2">Esteban Brion</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <section id="project-details">
+            <h1>F1 Strategy Simulator</h1>
+            <p>Le F1 Strategy Simulator est un package Python conçu pour simuler les stratégies de course en Formule 1 pour la saison 2023. Il permet aux utilisateurs de sélectionner un circuit, de choisir un pilote et de simuler la course en fonction des entrées choisies. Le simulateur fournit des informations sur les choix de pneus, les conditions météorologiques et les résultats de la course pour aider les utilisateurs à développer des stratégies optimales pour chaque course. Ce projet a été réalisé dans le cadre d'un cours et utilise des outils d'intelligence artificielle pour construire ce modèle.</p>
+            <p><strong>Version :</strong> 0.6</p>
+            <p><strong>Statut :</strong> La version actuelle est encore en développement, donc des erreurs peuvent survenir pendant son utilisation.</p>
+            <p><strong>Limitations Actuelles :</strong> Le modèle sous-jacent utilisé dans le simulateur peut être trop limité dans certains cas. Par exemple, si les données pour un type de pneu spécifique ne sont pas disponibles pour un circuit ou sont très limitées, cela peut entraîner des erreurs ou des comportements inattendus dans la simulation. Nous prévoyons d'améliorer le modèle pour prendre en compte ces limitations et fournir une expérience de simulation plus réaliste dans les futures versions du projet.</p>
+            <h2>Utilisation du Simulateur</h2>
+            <p>Pour utiliser le simulateur, exécutez simplement le fichier <code>interface.py</code>. Cela lancera l'interface utilisateur où vous pourrez sélectionner le circuit et les pilotes pour la simulation. Assurez-vous d'avoir toutes les dépendances requises installées (voir la section "Requirements" pour plus de détails).</p>
+            <h3>Couple Circuit-Pilote</h3>
+            <p>Des erreurs persistent dans le déroulé de la simulation, notamment lors du passage des qualifications au déroulement réel de la course. Voici certains couples plus ou moins fonctionnels :</p>
+            <ul>
+                <li>Bahrain Grand Prix et Lewis Hamilton</li>
+                <li>Australian Grand Prix et Carlos Sainz (pas de données pour les pneus SOFT → temps au tour négatif)</li>
+                <li>Monaco Grand Prix et Max Verstappen</li>
+                <li>Monaco Grand Prix et Charles Leclerc</li>
+                <li>Miami Grand Prix et Charles Leclerc (Bug sur les 5 premiers tours)</li>
+            </ul>
+            <h2>Fonctionnalités</h2>
+            <ul>
+                <li><strong>Sélection de Circuit :</strong> Choisissez parmi une liste de circuits présentés dans la saison de Formule 1 2023.</li>
+                <li><strong>Sélection de Pilote :</strong> Choisissez parmi une liste de pilotes participant à la saison 2023.</li>
+                <li><strong>Simulation de Course :</strong> Simulez la course en fonction des entrées de l'utilisateur, y compris les choix de pneus, les stratégies de carburant et les conditions météorologiques.</li>
+                <li><strong>Analyse Stratégique :</strong> Analysez les résultats de la course et évaluez les performances des stratégies sélectionnées.</li>
+            </ul>
+            <h2>Requirements</h2>
+            <ul>
+                <li>numpy</li>
+                <li>pandas</li>
+                <li>PyQt5</li>
+                <li>matplotlib</li>
+                <li>scikit-learn</li>
+            </ul>
+            <h2>Licence</h2>
+            <p>Ce projet est sous licence MIT. Veuillez consulter le fichier LICENSE pour plus de détails.</p>
+            <h2>Remerciements</h2>
+            <p>Le F1 Strategy Simulator a été développé en mars 2024 par Thomas Poizot & Esteban Brion.</p>
+            <a href="https://github.com/ThomasPzt/F1_Project" class="btn btn-primary">Voir le projet sur GitHub</a>
+        </section>
+    </main>
+    <footer class="bg-primary text-white text-center py-3">
+        <p>© 2024 Esteban Brion - Tous droits réservés</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrap.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
